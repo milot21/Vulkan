@@ -1,0 +1,14 @@
+C:/Users/milot/Downloads/Videos1_8_Windows/cmake-build-debug/CMakeFiles/shaders.dir
+C:/Users/milot/Downloads/Videos1_8_Windows/cmake-build-debug/CMakeFiles/VulkanTest.dir
+C:/Users/milot/Downloads/Videos1_8_Windows/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/milot/Downloads/Videos1_8_Windows/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/milot/Downloads/Videos1_8_Windows/cmake-build-debug/lib/CMakeFiles/edit_cache.dir
+C:/Users/milot/Downloads/Videos1_8_Windows/cmake-build-debug/lib/CMakeFiles/rebuild_cache.dir
+C:/Users/milot/Downloads/Videos1_8_Windows/cmake-build-debug/lib/glm/CMakeFiles/edit_cache.dir
+C:/Users/milot/Downloads/Videos1_8_Windows/cmake-build-debug/lib/glm/CMakeFiles/rebuild_cache.dir
+C:/Users/milot/Downloads/Videos1_8_Windows/cmake-build-debug/lib/glm/glm/CMakeFiles/edit_cache.dir
+C:/Users/milot/Downloads/Videos1_8_Windows/cmake-build-debug/lib/glm/glm/CMakeFiles/rebuild_cache.dir
+C:/Users/milot/Downloads/Videos1_8_Windows/cmake-build-debug/lib/glfw/CMakeFiles/edit_cache.dir
+C:/Users/milot/Downloads/Videos1_8_Windows/cmake-build-debug/lib/glfw/CMakeFiles/rebuild_cache.dir
+C:/Users/milot/Downloads/Videos1_8_Windows/cmake-build-debug/lib/tinyobjloader/CMakeFiles/edit_cache.dir
+C:/Users/milot/Downloads/Videos1_8_Windows/cmake-build-debug/lib/tinyobjloader/CMakeFiles/rebuild_cache.dir
