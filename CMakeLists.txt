@@ -47,7 +47,7 @@ add_custom_target(shaders ALL DEPENDS ${SPV_SHADERS})
 
 ### END SHADER COMPILATION
 
-add_library(glfw STATIC IMPORTED lve/lve_camera.hpp lve/lve_utils.hpp)
+add_library(glfw STATIC IMPORTED lve/lve_camera.hpp lve/lve_utils.hpp lve/lve_game_object.cpp)
 
 set_target_properties(glfw PROPERTIES
         IMPORTED_LOCATION "${CMAKE_CURRENT_SOURCE_DIR}/lib/glfw/lib-mingw-w64/libglfw3.a"
