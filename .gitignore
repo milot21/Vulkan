@@ -1,0 +1,11 @@
+# build and binary files
+/build/
+*.obj
+*.exe
+*.json
+*.log
+
+#CMake generated
+CMakeFiles/
+CMakeCache.txt
+cmake-build-*/
