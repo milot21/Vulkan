@@ -1,6 +1,6 @@
 # ninja log v5
 2112	3118	7821607755511801	CMakeFiles/VulkanTest.dir/lve/lve_game_object.cpp.obj	c049a1dd439cec48
-8	1358	7821616444408251	CMakeFiles/VulkanTest.dir/first_app.cpp.obj	b61d6018ba338fe7
+16	1528	7821627947046605	CMakeFiles/VulkanTest.dir/first_app.cpp.obj	b61d6018ba338fe7
 22	218	7821607726523359	C:/Users/milot/Downloads/Videos1_8_Windows/shaders/simple_shader.vert.spv	f71ff77f7c17ab07
 11	221	7821607726543393	C:/Users/milot/Downloads/Videos1_8_Windows/shaders/simple_shader.frag.spv	fe68dee2dc77b79a
 9	739	7818644193707259	CMakeFiles/VulkanTest.dir/lve/lve_window.cpp.obj	cd62bde7bad2710a
@@ -11,23 +11,15 @@
 169	6653	7792267079725093	CMakeFiles/VulkanTest.dir/lve_swap_chain.cpp.obj	44869fcf3ac3e900
 2239	3283	7790677346994170	CMakeFiles/VulkanTest.dir/lve_model.cpp.obj	3110ec3e1335cf31
 394	2097	7821607745162308	CMakeFiles/VulkanTest.dir/lve/lve_pipeline.cpp.obj	4483f9c9535a0eb6
-1359	3047	7821616461219418	VulkanTest.exe	9d8737439e980fcd
+1256	4065	7821628923711112	VulkanTest.exe	9d8737439e980fcd
 2986	5676	7818644240503517	CMakeFiles/VulkanTest.dir/lve/lve_device.cpp.obj	e648d8f07c8c29b3
 2923	5623	7818644233420213	CMakeFiles/VulkanTest.dir/lve/lve_swap_chain.cpp.obj	9366ae9e04f6ae2f
 2097	5482	7821607779104213	CMakeFiles/VulkanTest.dir/lve/lve_model.cpp.obj	daf6028e330163d1
 2085	3566	7821607759997908	CMakeFiles/VulkanTest.dir/fileReader.cpp.obj	7e3d4da59967a89b
-385	2112	7821607745342802	CMakeFiles/VulkanTest.dir/simple_render_system.cpp.obj	f7e643b80ab83673
+6	1252	7821628895648232	CMakeFiles/VulkanTest.dir/simple_render_system.cpp.obj	f7e643b80ab83673
 6	964	7806075276417762	CMakeFiles/VulkanTest.dir/lve/keyboard_movement_controller.cpp.obj	74ffae5bb475d800
 6	1127	7820908601957536	CMakeFiles/VulkanTest.dir/lve/lve_renderer.cpp.obj	5b7d89a194ad287b
 5592	6144	7818644247813497	CMakeFiles/VulkanTest.dir/lve/lve_camera.cpp.obj	2fc711a5973efff0
 13	1136	7806080217526517	CMakeFiles/VulkanTest.dir/keyboard_movement_controller.cpp.obj	b6245d8ec70dd163
 2710	3753	7821607761891640	CMakeFiles/VulkanTest.dir/movement_controller.cpp.obj	edc97301205924a1
 2124	2709	7821607751444020	CMakeFiles/VulkanTest.dir/lve/lve_buffer.cpp.obj	d00fbe15ea075cb5
-7	1453	7821623783231926	CMakeFiles/VulkanTest.dir/first_app.cpp.obj	b61d6018ba338fe7
-7	1300	7821625034487353	CMakeFiles/VulkanTest.dir/first_app.cpp.obj	b61d6018ba338fe7
-6	1079	7821625195060101	CMakeFiles/VulkanTest.dir/simple_render_system.cpp.obj	f7e643b80ab83673
-14	1333	7821625197572856	CMakeFiles/VulkanTest.dir/first_app.cpp.obj	b61d6018ba338fe7
-1333	3246	7821625216662236	VulkanTest.exe	9d8737439e980fcd
-16	1528	7821627947046605	CMakeFiles/VulkanTest.dir/first_app.cpp.obj	b61d6018ba338fe7
-6	1252	7821628895648232	CMakeFiles/VulkanTest.dir/simple_render_system.cpp.obj	f7e643b80ab83673
-1256	4065	7821628923711112	VulkanTest.exe	9d8737439e980fcd

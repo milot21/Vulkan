@@ -4,6 +4,7 @@
 #include "lve/lve_camera.hpp"
 #include "simple_render_system.hpp"
 #include "lve/lve_buffer.hpp"
+
 // libs
 #define GLM_FORCE_RADIANS
 #define GLM_FORCE_DEPTH_ZERO_TO_ONE
@@ -21,10 +22,20 @@ namespace lve {
 
     struct GlobalUbo {
         glm::mat4 projectionView{1.f};
-        glm::vec3 lightDirection = glm::normalize(glm::vec3{1.f, -3.f, -1.f});
+
+        glm::vec4 ambientLightColor{1.f, 1.f, 1.f, .02f}; //w is intensity
+        glm::vec3 lightPosition{-1.f};
+        alignas(16) glm::vec4 lightColor{1.f}; //w is light intensity
     };
 
-    FirstApp::FirstApp() { loadGameObjects(); }
+    FirstApp::FirstApp() {
+        globalPool = LveDescriptorPool::Builder(lveDevice)
+                .setMaxSets(LveSwapChain::MAX_FRAMES_IN_FLIGHT)
+                .addPoolSize(VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER, LveSwapChain::MAX_FRAMES_IN_FLIGHT)
+                .build();
+
+        loadGameObjects();
+    }
 
     FirstApp::~FirstApp() {}
 
@@ -40,7 +51,22 @@ namespace lve {
             uboBuffers[i]->map();
         }
 
-        SimpleRenderSystem simpleRenderSystem{lveDevice, lveRenderer.getSwapChainRenderPass()};
+        auto globalSetLayout = LveDescriptorSetLayout::Builder(lveDevice)
+                .addBinding(0,VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER, VK_SHADER_STAGE_VERTEX_BIT)
+                .build();
+
+        std::vector<VkDescriptorSet> globalDescriptorSets(LveSwapChain::MAX_FRAMES_IN_FLIGHT);
+        for (int i = 0; i < globalDescriptorSets.size(); i++) {
+            auto bufferInfo = uboBuffers[i]->descriptorInfo();
+            LveDescriptorWriter(*globalSetLayout, *globalPool)
+                    .writeBuffer(0, &bufferInfo)
+                    .build(globalDescriptorSets[i]);
+        }
+
+        SimpleRenderSystem simpleRenderSystem{
+                lveDevice,
+                lveRenderer.getSwapChainRenderPass(),
+                globalSetLayout->getDescriptorSetLayout()};
         LveCamera camera{};
 
         auto viewerObject = LveGameObject::createGameObject();
@@ -67,7 +93,8 @@ namespace lve {
                     frameIndex,
                     frameTime,
                     commandBuffer,
-                    camera};
+                    camera,
+                    globalDescriptorSets[frameIndex]};
                 //update
                 GlobalUbo ubo{};
                 ubo.projectionView = camera.getProjection() * camera.getView();
