@@ -84,3 +84,7 @@
 2320	4502	7822130479840286	VulkanTest.exe	febdc82962516967
 19	6087	7822507139594148	CMakeFiles/VulkanTest.dir/first_app.cpp.obj	b61d6018ba338fe7
 6089	8881	7822507167459816	VulkanTest.exe	febdc82962516967
+17	2686	7822513326671391	CMakeFiles/VulkanTest.dir/systems/simple_render_system.cpp.obj	867f544a63eac570
+50	2693	7822513326751803	CMakeFiles/VulkanTest.dir/systems/point_light_system.cpp.obj	2c4fde869b5ad5cb
+35	3883	7822513335510181	CMakeFiles/VulkanTest.dir/first_app.cpp.obj	b61d6018ba338fe7
+4069	7731	7822513376976888	VulkanTest.exe	febdc82962516967
