@@ -31,6 +31,10 @@ namespace lve {
         glm::mat3 normalMatrix();
     };
 
+    struct PointLightComponent {
+        float lightIntensity = 1.0f;
+    };
+
     /**
      * represents one entity in the game world, and it's properties
      * Unique ID for each object
@@ -50,6 +54,9 @@ namespace lve {
             return LveGameObject{currentId++};
         }
 
+        static LveGameObject makePointLight(
+                float intensity = 10.0f, float radius = 0.1f, glm::vec3 color = glm::vec3(1.f));
+
         //disable copying to prevent issues with unique IDs
         LveGameObject(const LveGameObject &) = delete;
         LveGameObject &operator=(const LveGameObject &) = delete;
@@ -59,9 +66,12 @@ namespace lve {
         id_t getId() { return id; }
 
         //easy access during rendering
-        std::shared_ptr<LveModel> model{}; //shared pointer to 3d model
         glm::vec3 color{};                 // RBG color values
         TransformComponent transform{};    //position, rotation, scale data
+
+        // Optional pointer components
+        std::shared_ptr<LveModel> model{}; //shared pointer to 3d model
+        std::unique_ptr<PointLightComponent> pointLight = nullptr;
 
     private:
         //private constructor to enforce use of factory method
