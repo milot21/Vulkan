@@ -31,7 +31,7 @@ namespace lve {
 
     private:
         void loadGameObjects();
-        void updateAnimations();
+       // void updateAnimations();
 
 
         LveWindow lveWindow{WIDTH, HEIGHT, "Hello Vulkan!"};

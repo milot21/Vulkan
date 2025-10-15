@@ -1,6 +1,3 @@
-//
-// Created by milot on 10/14/2025.
-//
 #pragma once
 
 #include "lve_camera.hpp"
@@ -16,4 +13,4 @@ namespace lve {
         LveCamera &camera;
         VkDescriptorSet globalDescriptorSet;
     };
-}  // namespace lve
+} // lve

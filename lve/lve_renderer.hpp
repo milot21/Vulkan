@@ -76,7 +76,7 @@ namespace lve {
         std::vector<VkCommandBuffer> commandBuffers;// one cmd buff per frame
 
         uint32_t currentImageIndex;                 //index of current swap chain image
-        int currentFrameIndex;                      // current frame index
-        bool isFrameStarted;                        //state flag to prevent incalid ops
+        int currentFrameIndex{0};                      // current frame index
+        bool isFrameStarted{false};                        //state flag to prevent incalid ops
     };
 }  // namespace lve

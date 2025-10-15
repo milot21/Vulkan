@@ -44,6 +44,7 @@ namespace lve {
         }
         vkDeviceWaitIdle(lveDevice.device()); //wait for all GPU ops to complete before recreating
 
+
         //create new swapchain or recreate existing one
         if (lveSwapChain == nullptr) {
             lveSwapChain = std::make_unique<LveSwapChain>(lveDevice, extent); //new
