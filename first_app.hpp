@@ -40,7 +40,7 @@ namespace lve {
 
         //order of declaration matteers
         std::unique_ptr<LveDescriptorPool> globalPool{};
-        std::vector<LveGameObject> gameObjects;
+        LveGameObject::Map gameObjects;
     };
 }
 
