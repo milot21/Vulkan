@@ -14,6 +14,9 @@ namespace lve {
 
     //helper struct that stores all vulkan fixed function pipeline configs
     struct PipelineConfigInfo {
+
+        std::vector<VkVertexInputBindingDescription> bindingDescriptions{};
+        std::vector<VkVertexInputAttributeDescription> attributeDescriptions{};
         VkPipelineViewportStateCreateInfo viewportInfo;
         VkPipelineInputAssemblyStateCreateInfo inputAssemblyInfo;
         VkPipelineRasterizationStateCreateInfo rasterizationInfo;

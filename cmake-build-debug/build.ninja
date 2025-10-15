@@ -76,12 +76,12 @@ build CMakeFiles/VulkanTest.dir/fileReader.cpp.obj: CXX_COMPILER__VulkanTest_Deb
   OBJECT_DIR = CMakeFiles\VulkanTest.dir
   OBJECT_FILE_DIR = CMakeFiles\VulkanTest.dir
 
-build CMakeFiles/VulkanTest.dir/simple_render_system.cpp.obj: CXX_COMPILER__VulkanTest_Debug C$:/Users/milot/Downloads/Videos1_8_Windows/simple_render_system.cpp || cmake_object_order_depends_target_VulkanTest
-  DEP_FILE = CMakeFiles\VulkanTest.dir\simple_render_system.cpp.obj.d
+build CMakeFiles/VulkanTest.dir/systems/simple_render_system.cpp.obj: CXX_COMPILER__VulkanTest_Debug C$:/Users/milot/Downloads/Videos1_8_Windows/systems/simple_render_system.cpp || cmake_object_order_depends_target_VulkanTest
+  DEP_FILE = CMakeFiles\VulkanTest.dir\systems\simple_render_system.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IC:/Users/milot/Downloads/Videos1_8_Windows/lib/glm/glm/.. -IC:/Users/milot/Downloads/Videos1_8_Windows/lib/tinyobjloader -isystem C:/VulkanSDK/1.4.321.1/Include -isystem C:/Users/milot/Downloads/Videos1_8_Windows/lib/glfw/include
   OBJECT_DIR = CMakeFiles\VulkanTest.dir
-  OBJECT_FILE_DIR = CMakeFiles\VulkanTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\VulkanTest.dir\systems
 
 build CMakeFiles/VulkanTest.dir/first_app.cpp.obj: CXX_COMPILER__VulkanTest_Debug C$:/Users/milot/Downloads/Videos1_8_Windows/first_app.cpp || cmake_object_order_depends_target_VulkanTest
   DEP_FILE = CMakeFiles\VulkanTest.dir\first_app.cpp.obj.d
@@ -160,6 +160,13 @@ build CMakeFiles/VulkanTest.dir/lve/lve_descriptor.cpp.obj: CXX_COMPILER__Vulkan
   OBJECT_DIR = CMakeFiles\VulkanTest.dir
   OBJECT_FILE_DIR = CMakeFiles\VulkanTest.dir\lve
 
+build CMakeFiles/VulkanTest.dir/systems/point_light_system.cpp.obj: CXX_COMPILER__VulkanTest_Debug C$:/Users/milot/Downloads/Videos1_8_Windows/systems/point_light_system.cpp || cmake_object_order_depends_target_VulkanTest
+  DEP_FILE = CMakeFiles\VulkanTest.dir\systems\point_light_system.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/milot/Downloads/Videos1_8_Windows/lib/glm/glm/.. -IC:/Users/milot/Downloads/Videos1_8_Windows/lib/tinyobjloader -isystem C:/VulkanSDK/1.4.321.1/Include -isystem C:/Users/milot/Downloads/Videos1_8_Windows/lib/glfw/include
+  OBJECT_DIR = CMakeFiles\VulkanTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\VulkanTest.dir\systems
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target VulkanTest
@@ -168,7 +175,7 @@ build CMakeFiles/VulkanTest.dir/lve/lve_descriptor.cpp.obj: CXX_COMPILER__Vulkan
 #############################################
 # Link the executable VulkanTest.exe
 
-build VulkanTest.exe: CXX_EXECUTABLE_LINKER__VulkanTest_Debug CMakeFiles/VulkanTest.dir/main.cpp.obj CMakeFiles/VulkanTest.dir/lve/lve_window.cpp.obj CMakeFiles/VulkanTest.dir/fileReader.cpp.obj CMakeFiles/VulkanTest.dir/simple_render_system.cpp.obj CMakeFiles/VulkanTest.dir/first_app.cpp.obj CMakeFiles/VulkanTest.dir/lve/lve_pipeline.cpp.obj CMakeFiles/VulkanTest.dir/lve/lve_device.cpp.obj CMakeFiles/VulkanTest.dir/lve/lve_swap_chain.cpp.obj CMakeFiles/VulkanTest.dir/lve/lve_model.cpp.obj CMakeFiles/VulkanTest.dir/lve/lve_game_object.cpp.obj CMakeFiles/VulkanTest.dir/lve/lve_renderer.cpp.obj CMakeFiles/VulkanTest.dir/lve/lve_camera.cpp.obj CMakeFiles/VulkanTest.dir/movement_controller.cpp.obj CMakeFiles/VulkanTest.dir/lve/lve_buffer.cpp.obj CMakeFiles/VulkanTest.dir/lve/lve_descriptor.cpp.obj | C$:/VulkanSDK/1.4.321.1/Lib/vulkan-1.lib C$:/Users/milot/Downloads/Videos1_8_Windows/lib/glfw/lib-mingw-w64/libglfw3.a
+build VulkanTest.exe: CXX_EXECUTABLE_LINKER__VulkanTest_Debug CMakeFiles/VulkanTest.dir/main.cpp.obj CMakeFiles/VulkanTest.dir/lve/lve_window.cpp.obj CMakeFiles/VulkanTest.dir/fileReader.cpp.obj CMakeFiles/VulkanTest.dir/systems/simple_render_system.cpp.obj CMakeFiles/VulkanTest.dir/first_app.cpp.obj CMakeFiles/VulkanTest.dir/lve/lve_pipeline.cpp.obj CMakeFiles/VulkanTest.dir/lve/lve_device.cpp.obj CMakeFiles/VulkanTest.dir/lve/lve_swap_chain.cpp.obj CMakeFiles/VulkanTest.dir/lve/lve_model.cpp.obj CMakeFiles/VulkanTest.dir/lve/lve_game_object.cpp.obj CMakeFiles/VulkanTest.dir/lve/lve_renderer.cpp.obj CMakeFiles/VulkanTest.dir/lve/lve_camera.cpp.obj CMakeFiles/VulkanTest.dir/movement_controller.cpp.obj CMakeFiles/VulkanTest.dir/lve/lve_buffer.cpp.obj CMakeFiles/VulkanTest.dir/lve/lve_descriptor.cpp.obj CMakeFiles/VulkanTest.dir/systems/point_light_system.cpp.obj | C$:/VulkanSDK/1.4.321.1/Lib/vulkan-1.lib C$:/Users/milot/Downloads/Videos1_8_Windows/lib/glfw/lib-mingw-w64/libglfw3.a
   FLAGS = -g
   LINK_LIBRARIES = C:/VulkanSDK/1.4.321.1/Lib/vulkan-1.lib  C:/Users/milot/Downloads/Videos1_8_Windows/lib/glfw/lib-mingw-w64/libglfw3.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\VulkanTest.dir

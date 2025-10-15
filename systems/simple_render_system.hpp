@@ -2,11 +2,11 @@
 // Created by milot on 9/13/2025.
 //
 #pragma once
-#include "lve/lve_camera.hpp"
-#include "lve/lve_device.hpp"
-#include "lve/lve_game_object.hpp"
-#include "lve/lve_pipeline.hpp"
-#include "lve/lve_frame_info.hpp"
+#include "../lve/lve_camera.hpp"
+#include "../lve/lve_device.hpp"
+#include "../lve/lve_game_object.hpp"
+#include "../lve/lve_pipeline.hpp"
+#include "../lve/lve_frame_info.hpp"
 
 // std
 #include <memory>
